@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import "./Mycss.css";
+import axios from "axios";
 
 class Kapil extends Component{
     constructor(props){
@@ -31,6 +32,15 @@ class Kapil extends Component{
             name:"kapil",
         });
     }
+    // componentDidMount(){
+    //     axios.get("https://jsonplaceholder.typicode.com/posts")
+    //     .then((response) =>{
+    //         console.log(response);
+    //     })
+    //     .catch((error) =>{
+    //         console.log(error); 
+    //     })
+    // }
     render(){
         let mydt;
         mydt = this.state.todolist.map((row)=>{
